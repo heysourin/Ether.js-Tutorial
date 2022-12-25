@@ -110,10 +110,10 @@ function App() {
       );
 
       //TODO: Writing Contract
-      // await contract.setValue(4);
+      await contract.setValue(4);
 
       //TODO: Sending Ether from User to Contract
-      // await contract.sendEthContract({value:ethers.utils.parseEther("0.0001")});
+      await contract.sendEthContract({value:ethers.utils.parseEther("0.0001")});
 
       //TODO: Sending Ether from Contract to User
       await contract.sendEthUsers("0x2411303b59444ac2f3C434D8a77BF41f1606AB46",{value:ethers.utils.parseEther("0.0001")});
